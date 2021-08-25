@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const port = process.env.port || 8000;
 
 
 // built in middleware
@@ -27,7 +28,7 @@ app.get("*", (req, res) => {
     res.render("404");
 });
 
-app.listen(8000,() =>{
+app.listen(port,() =>{
     console.log("listing to port no. 8000");
 })
 
