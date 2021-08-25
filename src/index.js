@@ -12,7 +12,7 @@ app.use(express.static(staticpath));
 // to set the hbs engine
 app.set('view engine', 'hbs');
  
-app.get("/", (req, res) =>{
+app.get(" ", (req, res) =>{
     res.render("index");
 });
 
