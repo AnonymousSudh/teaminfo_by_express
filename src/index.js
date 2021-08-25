@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = process.env.port || 8000;
+let port = process.env.port || 8000;
 
 
 // built in middleware
@@ -12,7 +12,7 @@ app.use(express.static(staticpath));
 // to set the hbs engine
 app.set('view engine', 'hbs');
  
-app.get(" ", (req, res) =>{
+app.get("", (req, res) =>{
     res.render("index");
 });
 
