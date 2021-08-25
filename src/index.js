@@ -29,6 +29,6 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port,() =>{
-    console.log("listing to port no. 8000");
+    console.log(`listning to port no ${port}`);
 })
 
